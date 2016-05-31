@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	background: url('http://3.bp.blogspot.com/-22zamNNOfr4/VAZSISi1m1I/AAAAAAAAA7o/oVN8t0Zr2sc/s1600/ipad-watercolor-polka-dots.jpg');
+}
+h1{
+	text-align: center;
+	background-color: #00cdbc;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: white;
+	font-size: 50px;
+	padding: 10px;
+}
+nav{
+	font-family: 'Raleway', sans-serif;
+	font-size: 3rem;
+	color: white;
+	padding: 10px;
+	display: inline-block;
+}
+.createText{
+	font-size: 20px;
+	margin-left: 10px;
+	font-family: 'Raleway', sans-serif;
+}
+
+#create{
+	height: 60px;
+	width: 400px;
+	font-size: 15px;
+	margin-left: 10px;
+	border: 1px solid grey;
+	font-family: 'Raleway', sans-serif;
+}
+
+button{
+	height: 25px;
+	width: 50px;
+	border-radius: 8px;
+	background-color: #00cdbc;
+	color: white;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-family: 'Raleway', sans-serif;
+}
+
+ul{
+	list-style: none;
+	font-size: 25px;
+	margin-left: 10px;
+	font-family: 'Raleway', sans-serif;
+}
+li{
+	background-color: white;
+	margin: 10px;
+	padding: 5px;
+	border: 1px dashed;
+	border-color: #ffa500;
+}
+a{
+	text-decoration: none;
+}
+.showText{
+	color: #ffa500;
+	text-shadow: 1px 1px #a5682a;
+	font-weight: bold;
+}
+.note, article{
+	font-size: 20px;
+	text-align: center;
+	padding: 5px;
+	margin: 15px;
+	font-family: 'Raleway', sans-serif;
+}
+a.editing{
+	color: #ffa500;
+	font-size: 15px;
+	padding: 10px;
+	margin: 10px;
+	background-color: white;
+	border: 1px solid;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+#container{
+	text-align: center;
+	list-style: none;
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+}
+#deleteButton{
+	background-color: red;
+}

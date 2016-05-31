@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Wishlist App</title>
+<link rel="stylesheet" type="text/css" href="../../css/styles.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<h1><nav>wish!</nav></h1>
+	<br>
+	<ul>
+		<p class="showText">Title:</p><li><%=response_data.results[0].title%></li>
+		<p class="showText">Listing ID:</p><li><%=response_data.results[0].listing_id%></li>
+		<p class="showText">Description:</p><li><%=response_data.results[0].description%></li>
+		<p class="showText">Price:</p><li> $<%=response_data.results[0].price%></li>
+		<p class="showText">QTY:</p><li><%=response_data.results[0].quantity%> in stock</li>
+		<p class="showText">Purchase here:</p><li><a href="<%=response_data.results[0].url%>"> <img src="http://3.bp.blogspot.com/-vutANYSiYTU/VUpjh_fZQrI/AAAAAAAAAi4/c2sOgKw6p_w/s1600/etsy-logo.png"></a></li>
+	</ul>
+	<br>
+	<p class="note"> Note: The state of products are always active.</p>
+</body>
+</html>
