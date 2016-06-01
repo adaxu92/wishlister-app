@@ -140,7 +140,6 @@ router.get('/', function(req, res){
 //============================
 router.get('/etsy/:listing_id', function(req, res){
 	var listingId = req.params.listing_id;
-	console.log(test);
 	var x = "https://openapi.etsy.com/v2/listings/" + listingId + "/" + "?" + "api_key=" + (process.env.KEYSTRING);
 	console.log(x);
 	var response_data;
