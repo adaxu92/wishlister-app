@@ -28,7 +28,6 @@ nav{
 
 @keyframes nav {
     0%  {font-size: 3rem;}
-    25% {font-size: 2rem;}
     50% {font-size: 4rem;}
     100% {font-size: 3rem;}
 }
