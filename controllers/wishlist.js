@@ -53,9 +53,19 @@ router.get('/:id', function(req, res){
 // Edit User
 //=================
 router.get('/:id/edit', function(req, res){
+	var planInfo = req.cookies.plan;
+	console.log(planInfo)
+	var x = "https://openapi.etsy.com/v2/listings/active?api_key=" + (process.env.KEYSTRING) + "&limit=5&keywords='"+ (planInfo)+ "'";
+	var response_data;
+	request(x, function (error, response, body){
+		if(!error && response.statusCode == 200) {
+			console.log(body);		
+			response_data = JSON.parse(body);
 	Users.findById(req.params.id, function(err, user){
-		res.render('edit.ejs', {user: user})
-	});
+		res.render('edit.ejs', {user: user, response_data: response_data})
+	})
+	};
+});
 });
 
 //=================
@@ -117,7 +127,6 @@ router.get('/', function(req, res){
 	console.log(x);
 	request(x, function (error, response, body){
 		if(!error && response.statusCode == 200) {
-			console.log('*!*!*!*!*!*!*!*!*!*!*!*!**!*!*!!*');
 			console.log(body);		
 			response_data = JSON.parse(body);
 	};
@@ -130,9 +139,9 @@ router.get('/', function(req, res){
 // Showing Specific Etsy Info
 //============================
 router.get('/etsy/:listing_id', function(req, res){
-	var test = req.params.listing_id;
+	var listingId = req.params.listing_id;
 	console.log(test);
-	var x = "https://openapi.etsy.com/v2/listings/" + test + "/" + "?" + "api_key=" + (process.env.KEYSTRING);
+	var x = "https://openapi.etsy.com/v2/listings/" + listingId + "/" + "?" + "api_key=" + (process.env.KEYSTRING);
 	console.log(x);
 	var response_data;
 	request(x, function (error, response, body){

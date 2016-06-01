@@ -20,6 +20,7 @@ nav{
 	color: white;
 	padding: 10px;
 	display: inline-block;
+	text-shadow: 1px 2px #ffa500;
 }
 .createText{
 	font-size: 20px;
@@ -60,20 +61,33 @@ li{
 	border: 1px dashed;
 	border-color: #ffa500;
 }
-a{
+a, a:visited{
 	text-decoration: none;
+	color: #1C5569
 }
 .showText{
 	color: #ffa500;
 	text-shadow: 1px 1px #a5682a;
 	font-weight: bold;
 }
-.note, article{
+.note{
 	font-size: 20px;
 	text-align: center;
 	padding: 5px;
 	margin: 15px;
 	font-family: 'Raleway', sans-serif;
+	font-style: italic;
+	color: #EB6C28;
+	text-shadow: 1px 1px white;
+}
+
+article{
+	font-size: 20px;
+	text-align: center;
+	padding: 5px;
+	margin: 15px;
+	font-family: 'Raleway', sans-serif;
+	font-style: italic;
 }
 a.editing{
 	color: #ffa500;
@@ -105,4 +119,5 @@ div#editing{
 	font-weight: bold;
 	text-align: center;
 	width: 25%;
+
 }
