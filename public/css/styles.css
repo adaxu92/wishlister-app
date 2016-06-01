@@ -21,6 +21,16 @@ nav{
 	padding: 10px;
 	display: inline-block;
 	text-shadow: 1px 2px #ffa500;
+  animation-name: nav;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes nav {
+    0%  {font-size: 3rem;}
+    25% {font-size: 2rem;}
+    50% {font-size: 4rem;}
+    100% {font-size: 3rem;}
 }
 .createText{
 	font-size: 20px;
