@@ -9,6 +9,7 @@
 </head>
 <body>
 	<h1> Check out your<nav>*wishlist*</nav>!</h1>
+
 	<br>
 	<ul><% for(var i = 0; i<response_data.results.length; i++){ %>
 		<li><a href="/wishlist/etsy/<%=response_data.results[i].listing_id%>"> <%=response_data.results[i].title%></a></li>
@@ -16,6 +17,9 @@
 	<% } %>
 	</ul>
 	<br>
-	<p class="note"> Note: The state of products are always active.</p>
+	<p class="note"> Note: The state of products are always active.</p>	
+	<div id="editing"><a href="/wishlist/<%=user._id%>/edit">Edit my account.</a></div>
+	<br>
+	<br>
 </body>
 </html>

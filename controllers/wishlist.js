@@ -110,6 +110,7 @@ function newEtsy(etsyData, callback){
 //================================
 router.get('/', function(req, res){	
 	var planInfo = req.cookies.plan;
+	var idInfo = req.cookies.name;
 	console.log(planInfo)
 	var x = "https://openapi.etsy.com/v2/listings/active?api_key=" + (process.env.KEYSTRING) + "&limit=5&keywords='"+ (planInfo)+ "'";
 	var response_data;
@@ -121,7 +122,7 @@ router.get('/', function(req, res){
 			response_data = JSON.parse(body);
 	};
 		// res.json(response_data);
-		res.render('index.ejs', {response_data: response_data})
+		res.render('index.ejs', {response_data: response_data, user: {_id: idInfo}})
 	});
 });
 
