@@ -121,3 +121,133 @@ div#editing{
 	width: 25%;
 
 }
+
+/* ==========
+	Media Query
+	===========*/
+@media (max-width: 700px){
+	*{
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	background: url('https://youngfabulousandsick.files.wordpress.com/2015/01/watercolor-background.jpg');
+}
+h1{
+	text-align: center;
+	background-color: #ffa500;
+	font-family: 'Playball', cursive;
+	color: white;
+	font-size: 40px;
+	padding: 10px;
+}
+nav{
+	font-family: 'Raleway', sans-serif;
+	font-size: 2rem;
+	color: white;
+	padding: 10px;
+	display: inline-block;
+	text-shadow: 1px 2px #00cdbc;
+}
+.createText{
+	font-size: 20px;
+	margin-left: 10px;
+	font-family: 'Playball', cursive;
+}
+
+#create{
+	height: 60px;
+	width: 400px;
+	font-size: 15px;
+	margin-left: 10px;
+	border: 1px solid grey;
+	font-family: 'Playball', cursive;
+}
+
+button{
+	height: 25px;
+	width: 50px;
+	border-radius: 8px;
+	background-color: #ffa500;
+	color: white;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-family: 'Playball', cursive;
+}
+
+ul{
+	list-style: none;
+	font-size: 18px;
+	margin-left: 10px;
+	font-family: 'Playball', cursive;
+}
+li{
+	background-color: white;
+	margin: 10px;
+	padding: 5px;
+	border: 1px dashed;
+	border-color: #00cdbc;
+}
+a, a:visited{
+	text-decoration: none;
+	color: #1C5569
+}
+.showText{
+	color: #00cdbc;
+	text-shadow: 1px 1px #a5682a;
+	font-weight: bold;
+}
+.note{
+	font-size: 20px;
+	text-align: center;
+	padding: 5px;
+	margin: 15px;
+	font-family: 'Playball', cursive;
+	font-style: italic;
+	color: #00cdbc;
+	text-shadow: 1px 1px white;
+}
+
+article{
+	font-size: 20px;
+	text-align: center;
+	padding: 5px;
+	margin: 15px;
+	font-family: 'Playball', cursive;
+	font-style: italic;
+}
+a.editing{
+	color: #00cdbc;
+	font-size: 15px;
+	padding: 10px;
+	margin: 10px;
+	background-color: white;
+	border: 1px solid;
+	font-family: 'Playball', cursive;
+	font-weight: bold;
+}
+#container{
+	text-align: center;
+	list-style: none;
+	font-size: 25px;
+	font-family: 'Playball', cursive;
+}
+#deleteButton{
+	background-color: black;
+	color: white;
+}
+div#editing{
+	color: #00cdbc;
+	font-size: 15px;
+	padding: 10px;
+	margin: 0 auto;
+	background-color: white;
+	border: 1px solid;
+	font-family: 'Playball', cursive;
+	font-weight: bold;
+	text-align: center;
+	width: 25%;
+
+}
+}
