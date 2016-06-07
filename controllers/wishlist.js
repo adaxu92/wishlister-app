@@ -73,6 +73,7 @@ router.get('/:id/edit', function(req, res){
 //=================
 router.put('/:id', function(req, res){
 	Users.findOneAndUpdate({"_id": req.params.id}, req.body, function(err, user){
+		res.cookie('plan', req.body.plan)
 		res.redirect('/wishlist/' + user._id);
 	});
 });
